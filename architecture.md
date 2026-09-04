@@ -5,7 +5,7 @@
 
 ## Architecture Flow Diagram
 
-![Architecture Flow Diagram](C:\Users\tanis\.gemini\antigravity\brain\39c87c8c-2d2c-4f3d-a79a-c7b25f1d46d5\architecture_flow_diagram_1784579535796.png)
+![Architecture Flow Diagram](architecture_diagram.png)
 
 ---
 

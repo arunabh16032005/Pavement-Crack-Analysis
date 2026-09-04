@@ -1,0 +1,949 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2420 1040" width="2420" height="1040" style="background:#ffffff; font-family:'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Filters & Shadows -->
+    <filter id="card-shadow" x="-4%" y="-3%" width="108%" height="108%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+    <filter id="block-shadow" x="-6%" y="-6%" width="112%" height="112%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="2" stdDeviation="2.5" flood-color="#000000" flood-opacity="0.09"/>
+    </filter>
+    
+    <!-- Gradients -->
+    <linearGradient id="grad-input" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#f1f5f9"/>
+    </linearGradient>
+    <linearGradient id="grad-frozen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="grad-quantum" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0fdf4"/>
+      <stop offset="100%" stop-color="#dcfce7"/>
+    </linearGradient>
+    <linearGradient id="grad-backbone" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf5ff"/>
+      <stop offset="100%" stop-color="#f3e8ff"/>
+    </linearGradient>
+    <linearGradient id="grad-refine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff1f2"/>
+      <stop offset="100%" stop-color="#ffe4e6"/>
+    </linearGradient>
+    <linearGradient id="grad-struct" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="100%" stop-color="#fef3c7"/>
+    </linearGradient>
+    <linearGradient id="grad-severity" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="grad-outputs" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+    <linearGradient id="grad-legend" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <linearGradient id="grad-optim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f0f9ff"/>
+      <stop offset="100%" stop-color="#e0f2fe"/>
+    </linearGradient>
+
+    <!-- Markers -->
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1e293b"/>
+    </marker>
+    <marker id="arrow-blue" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrow-purple" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#7c3aed"/>
+    </marker>
+    <marker id="arrow-dashed" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0284c7"/>
+    </marker>
+    <marker id="arrow-orange" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#ea580c"/>
+    </marker>
+    <marker id="arrow-rose" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/>
+    </marker>
+  </defs>
+
+  <!-- ==================== MAIN HEADER ==================== -->
+  <g id="header">
+    <text x="1210" y="38" font-size="26" font-weight="800" text-anchor="middle" fill="#0f172a" letter-spacing="0.5">QUANTUM-ENHANCED PAVEMENT CONDITION MONITORING SYSTEM</text>
+    <text x="1210" y="60" font-size="14" font-weight="500" text-anchor="middle" fill="#475569">End-to-End Hybrid Quantum-Classical Framework for Automated Crack Segmentation, Severity Prediction, and Pavement Assessment</text>
+  </g>
+
+  <!-- ==================== 1. INPUT & PREPROCESSING ==================== -->
+  <g id="panel-input" transform="translate(25, 80)">
+    <rect width="215" height="740" rx="12" fill="url(#grad-input)" stroke="#cbd5e1" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="215" height="40" rx="12" fill="#e2e8f0"/>
+    <rect x="0" y="20" width="215" height="20" fill="#e2e8f0"/>
+    <text x="107" y="26" font-size="13" font-weight="800" text-anchor="middle" fill="#0f172a">INPUT &amp; PREPROCESSING</text>
+
+    <!-- Raw Image Thumbnail -->
+    <g transform="translate(37, 52)">
+      <rect width="140" height="110" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA3CAIAAADIey4vAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAPLklEQVR4nK1ZSZMcRZb2JTw89sysrFKVJJOG6lbPIDPggC4YB7WNQXNnDvyPsZn79C/ixF9ALQ0ImcFBwNCSTAMI1ZJLbO4Rvo15vFRWdqmqKLDxgyyU6Rnu/t63vOeFj46O0DAwxggha+36efNhPZxz6PyBMXbD2Pytc+68F5562+vLIYQC+PS8hdeLbU449d/z5q+fNxc+9cNTh1mPzV0Fmx+tHzZnrD+5OH4w1tNOrXpmeC4Ym2uR3/qWX52Gf+NuLvghpOJki5cJ0uWn/dZx5sEAJMEpRK93cArsv+MAbiPjv0qyC74ll1ns8l+9PueSky+YtorimXg/j8UXBBWfQ5fLjNffCS9ZRXFTGk7JxG/lJv69dHl9rERnE4UwzpTcC4DlLhfdM5FKyNl83czk6URfflyst5dM4nkTNuXZR/HUDzYpfCbqh2eL0OkAu2HKOYE8g5e/6lIwfmcUL+AEPiuWZ+5mE0i/bYubjncedTAmr1cG+B9Zv7kYIeRUWs4bKxa/wqiX7v8XArpX2DgPiJv7O2X9F2z0JIqvz16H8JL7Q69l7cy0bi4P+blMseejeC6knKGUvsLWeu/EIgPm/rq843N2SYh/A0bIIUQwBqAgjJ21buDdxr//WGuu60WMqRAiCtlf/+uvmLggGD43mhCitQ7D0DlnjEGUOO1oSJVScRx3XYcxttZS6j8BALVtizFmjK2QFHjRgBhThLWzjFDCAqu0I5gHTKo+YqHou4RH2lmrNJycEGKtJSzAs9kMIdR1Ks/zuly+++67//Gf/845CzBhYUAQXm9RG2utVUoFQUBD1nWdUv5XSil4o3NOCPHtt98eHBy899578FWWZW3bJhHXWgdBAD8nw8AYw3mSJNFaG+MXgJAx6mOkrQnDcKWLURS1bRsEQRiGURTleRqxUOkeWZemsda267okjYMgEK3EGCurp9Mtf0pCpJQIIUqpn5PEi8U8z7OiyMfjMcQ+iiYUY9gcQkhrnxxrrXMuDMM0Teu6ds6laUoplVISQqKQCSGyJIuiaMVtYwwhqO97GuDDw5d93zvk08c5a9sWIZTned/3dV0PIfejbdu+77XW1tp+GEqpr7/++vHjx4QQIQTGuO/75XJJCKGUAgziOPY7iCI6DCll27YAksViIaVkjEGukiRBCC2XS3+sAShIaxNFUd/3ASZ///5//vDHfYRsQGgYhn0vm6ZijIcBM84SiolFdVkmSeKMcdaO8nw2mz148ODg4OBf//znO3fuRFHkwYfx3pUrbdum40KpzjnTtrXWquuctVZrjZBN07jvJTwkid9AFIUUew4EITfGnEh3GIairaMounfvnjbq8OiXoigoJjdv3uScQ8qUUpiSOI4hhF4RgsBa++WXX3733XdRFH388ceTyaRpGjMMn5Yhfsvl0iMySQYwJM45zjlCaDQatW1rjGHMpyuOY8550zSBjzuFVU626AmLUFVVH374YRRzZM2zZ88IRX+7/3lRFO+88w6xpG1bxvhyvvjxx+dPnjyJ41hKGcfxrVu33v63j7MsC8OQYhQGFFnjjE7jqO87D0FMsiRljOleqc5DolqWUsosyyilUciN0qrrm6omhIRhiLDteoFJwBg92SLGAN4YE88eq9X169d5xIqiePLkyeeffy5F//LlS+fwaDQyRr3xxhtXr159/PjxaDS6efMmYwzEou97kKo1MwCUKxQFAYQTZMtaK6VM0zQMQ2stANEnwSp/2oEpPk2D4HpkYIyBUMaYkLEoipI0cs699dZbUspyWd+9exfoz4j/drGc3fzLX+7fv5/GMaW073urNSIeCb2UlOIo4mVZOq+aJssyYFWe513XAR5GoxGlFBIImGnbNgxDTPxJlK63t7dX7mKtWfs3Y2yQLq+6QRAURdF1XZZlO9u7cRx7Lcgy2UgP5CCYz+cY459++inP8yjy53HOSSm9JjgjpYRoEUL8AQaqOucopc65JEmM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" x="10" y="8" width="120" height="74" preserveAspectRatio="xMidYMid slice"/>
+      <text x="70" y="96" font-size="10.5" font-weight="700" text-anchor="middle" fill="#334155">Raw Pavement Image</text>
+      <text x="70" y="107" font-size="9" font-weight="600" text-anchor="middle" fill="#64748b">I_raw ∈ ℝ^(H×W×3)</text>
+    </g>
+
+    <!-- Down Arrow -->
+    <path d="M 107 175 L 107 205" stroke="#334155" stroke-width="2.2" marker-end="url(#arrow)"/>
+    <text x="107" y="195" font-size="9" font-weight="700" text-anchor="middle" fill="#475569" dx="42">Raw Stream</text>
+
+    <!-- Preprocessing Pipeline Box -->
+    <g transform="translate(18, 215)">
+      <rect width="178" height="495" rx="10" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="89" y="24" font-size="12" font-weight="800" text-anchor="middle" fill="#1e293b">Preprocessing Pipeline</text>
+
+      <!-- Step 1: Standardization -->
+      <g transform="translate(14, 36)">
+        <rect width="150" height="76" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="75" y="18" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a">1. Standardization</text>
+        <text x="75" y="35" font-size="9.5" text-anchor="middle" fill="#475569">Resize to 512×512</text>
+        <text x="75" y="50" font-size="9.5" text-anchor="middle" fill="#475569">Normalize [0, 1] float32</text>
+        <text x="75" y="64" font-size="8.5" text-anchor="middle" fill="#64748b">ImageNet μ, σ stats</text>
+      </g>
+
+      <!-- Step 2: Noise Suppression -->
+      <g transform="translate(14, 122)">
+        <rect width="150" height="76" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="75" y="18" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a">2. Noise Suppression</text>
+        <text x="75" y="35" font-size="9.5" text-anchor="middle" fill="#475569">Non-Local Means (h=10)</text>
+        <text x="75" y="50" font-size="9.5" text-anchor="middle" fill="#475569">Bilateral Filter (d=9)</text>
+        <text x="75" y="64" font-size="8.5" text-anchor="middle" fill="#64748b">Edge-preserving smoothing</text>
+      </g>
+
+      <!-- Step 3: CLAHE -->
+      <g transform="translate(14, 208)">
+        <rect width="150" height="76" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="75" y="18" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a">3. CLAHE Enhancement</text>
+        <text x="75" y="35" font-size="9.5" text-anchor="middle" fill="#475569">L-Channel in LAB Space</text>
+        <text x="75" y="50" font-size="9.5" text-anchor="middle" fill="#475569">Clip Limit=2.0, Tile 8×8</text>
+        <text x="75" y="64" font-size="8.5" text-anchor="middle" fill="#64748b">Illumination balancing</text>
+      </g>
+
+      <!-- Step 4: Augmentation -->
+      <g transform="translate(14, 294)">
+        <rect width="150" height="76" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="75" y="18" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a">4. Data Augmentation</text>
+        <text x="75" y="35" font-size="9.5" text-anchor="middle" fill="#475569">Elastic Transform (α=120)</text>
+        <text x="75" y="50" font-size="9.5" text-anchor="middle" fill="#475569">Rot ±15°, Flips, Jitter</text>
+        <text x="75" y="64" font-size="8.5" text-anchor="middle" fill="#64748b">Joint Mask Transformation</text>
+      </g>
+
+      <!-- Step 5: ROI Localization -->
+      <g transform="translate(14, 380)">
+        <rect width="150" height="95" rx="6" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="75" y="18" font-size="11" font-weight="700" text-anchor="middle" fill="#0f172a">5. ROI Localization</text>
+        <text x="75" y="35" font-size="9.5" text-anchor="middle" fill="#475569">GrabCut + Otsu Pavement</text>
+        <text x="75" y="50" font-size="9.5" text-anchor="middle" fill="#475569">Non-pavement masking</text>
+        <text x="75" y="68" font-size="9.5" font-weight="700" text-anchor="middle" fill="#2563eb">Output: I_pre (512×512)</text>
+        <text x="75" y="82" font-size="8.5" text-anchor="middle" fill="#64748b">Standardized Token</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Transition Arrow: Input to Encoders -->
+  <g transform="translate(240, 500)">
+    <path d="M 0 0 L 55 0" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <g transform="translate(12, -45)">
+      <rect width="30" height="30" rx="4" fill="#ffffff" stroke="#64748b" stroke-width="1.2"/>
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAIAAACkSXkKAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAADSElEQVR4nI1Uu1LsRhDt6ZnZlbTGe9nAL7YMRUJAQkKAnbpuSJGSEJPzJaT8AyG/AAEux5gyD4OvTZXXa/uuVo95tWvUoCtznydQaUbTPadPn5YgIngXnu0LIeCDwA9/bvG++1qIEMLbtxERb9LH4j+VkfhYRW9OElEIARGttVJK0eAZF9FJF0Jod9ozMaZN1E1vrdVafyIXRkzUiuK9BwAp5fvUoWazJfg/Rm1FzjmlFAAYY3q93ttZnvXh2RKVUvzGdACg1+uFEOgJ0ME7l/x8I02/3weAqqpYozYLPYGzd+nw++OTT3fV5dK6/qJOxratzzVyzrXqEtH19fXh4WEjmgQIAEjkiQSRB6JABB29u4kUL7z3iIiC/p5Ofn91//LlD4jKmCrLPqvrElHVdfnLz5ej0eK3S2MiUioGGmMAgN+j2F2nAUD+7z+/Xt9MpxMppbW1976Yvf7p/Mcvv/pi/M3XSkulpQACCgIIBaAAJVFxPF8CEJRSo9FoZWVl8teff7z6bTabIWJRFN99v5UkCavJNm5CYq+EIKW0QsRI7MnZ7QSMx+O6rrXWiHhzczOfz2UD772UkpoOShljG9+YyCiK01zinY2OQJRSImIIwXtvrV1cXLy9vX3x4vOlpaUsS+In50MInNfaJso3MMZE5RsHVFXlnJvNZkqpwWCAiMPhcG1t7eHhoVHN1g2stcYY51wIIU6Fcy5NU25BrxcrZUYEwXub56+NMUoNAIIUWBWl1prdpNTjYQLvbMCDg4PT01MONnXNlTpv+/0+WzlJEmNMlmVpmt7d3c3n8zzPq6piRsyuKAo8OTnZ39/f29u7v7/XWhtjWB1bG/IhOE8+cqnLanl5eTQaXV5eTiaTsiy5fc45noQo83Q6PT8/39nZOTs7A4CiKIKnqqq89zxixhgOS5JkY2Mjz3MhBNPh6mId1tokSdI0PTo62tra0lqzA1RET0rdzAoCxNq11kVRrK6uXlxc8M+nKAqJOs9ztbm5ubu7u729naYpQCjLklszyFLvvXOO7dpcG5dSSqXUeDy+urpaX1/n1MPhUB0fH7PHrLVKioWFhSzLHv8hPgCPu2z6SOg9Sanq2oQAVRVLi7Fazeb5f1u7iYiSeWZyAAAAAElFTkSuQmCC" x="3" y="3" width="24" height="24" preserveAspectRatio="xMidYMid slice"/>
+    </g>
+    <text x="27" y="18" font-size="9.5" font-weight="700" text-anchor="middle" fill="#1e293b">Preprocessed Token</text>
+    <text x="27" y="32" font-size="9" font-weight="600" text-anchor="middle" fill="#64748b">I_pre (512×512×3)</text>
+  </g>
+
+  <!-- ==================== 2. FROZEN PRE-TRAINED ENCODERS ==================== -->
+  <g id="panel-encoders" transform="translate(305, 80)">
+    <rect width="200" height="740" rx="12" fill="url(#grad-frozen)" stroke="#93c5fd" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="200" height="40" rx="12" fill="#bfdbfe"/>
+    <rect x="0" y="20" width="200" height="20" fill="#bfdbfe"/>
+    <!-- NO EMOJI! Clean typography -->
+    <text x="100" y="18" font-size="13" font-weight="800" text-anchor="middle" fill="#1e3a8a">FROZEN PRE-TRAINED</text>
+    <text x="100" y="33" font-size="12.5" font-weight="800" text-anchor="middle" fill="#1e3a8a">ENCODERS</text>
+
+    <!-- Branch 1: Frangi / Hessian -->
+    <g transform="translate(15, 50)">
+      <rect width="170" height="135" rx="8" fill="#ffffff" stroke="#60a5fa" stroke-width="1.5"/>
+      <image href="data:image/png;base64,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" x="12" y="10" width="55" height="55" preserveAspectRatio="xMidYMid slice"/>
+      <text x="75" y="26" font-size="11" font-weight="700" fill="#1e3a8a">Frangi / Hessian</text>
+      <text x="75" y="42" font-size="9.5" fill="#2563eb">Multi-Scale σ=(1, 2, 4, 8)</text>
+      <text x="75" y="56" font-size="9" fill="#64748b">Eigenvalue Ratio λ₁/λ₂</text>
+      <line x1="12" y1="74" x2="158" y2="74" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="85" y="92" font-size="10" font-weight="700" text-anchor="middle" fill="#0369a1">Curvilinear Ridge Map</text>
+      <text x="85" y="110" font-size="10" text-anchor="middle" fill="#0284c7" font-weight="800">F_curv ∈ ℝ^(H×W×C₁)</text>
+      <text x="85" y="124" font-size="8.5" text-anchor="middle" fill="#64748b">Tube-like Crack Geometry</text>
+    </g>
+
+    <!-- Branch 2: Wavelet / Gabor -->
+    <g transform="translate(15, 200)">
+      <rect width="170" height="135" rx="8" fill="#ffffff" stroke="#60a5fa" stroke-width="1.5"/>
+      <image href="data:image/png;base64,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" x="12" y="10" width="55" height="55" preserveAspectRatio="xMidYMid slice"/>
+      <text x="75" y="26" font-size="11" font-weight="700" fill="#1e3a8a">Wavelet / Gabor</text>
+      <text x="75" y="42" font-size="9.5" fill="#2563eb">Morlet J=3, L=8</text>
+      <text x="75" y="56" font-size="9" fill="#64748b">8 Orients × 5 Freqs</text>
+      <line x1="12" y1="74" x2="158" y2="74" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="85" y="92" font-size="10" font-weight="700" text-anchor="middle" fill="#0369a1">Spectral-Texture Bank</text>
+      <text x="85" y="110" font-size="10" text-anchor="middle" fill="#0284c7" font-weight="800">F_tex ∈ ℝ^(H×W×C₂)</text>
+      <text x="85" y="124" font-size="8.5" text-anchor="middle" fill="#64748b">Persistent Homology (H₀, H₁)</text>
+    </g>
+
+    <!-- Branch 3: Vision Mamba (SSM) -->
+    <g transform="translate(15, 350)">
+      <rect width="170" height="142" rx="8" fill="#ffffff" stroke="#60a5fa" stroke-width="1.5"/>
+      <image href="data:image/png;base64,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" x="12" y="10" width="55" height="55" preserveAspectRatio="xMidYMid slice"/>
+      <text x="75" y="26" font-size="11" font-weight="700" fill="#1e3a8a">Vision Mamba</text>
+      <text x="75" y="42" font-size="9.5" fill="#2563eb">SS2D Bi-directional</text>
+      <text x="75" y="56" font-size="9" fill="#64748b">Selective S6 Model</text>
+      <line x1="12" y1="74" x2="158" y2="74" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="85" y="92" font-size="10" font-weight="700" text-anchor="middle" fill="#0369a1">Semantic State Space</text>
+      <text x="85" y="110" font-size="10" text-anchor="middle" fill="#0284c7" font-weight="800">F_sem ∈ ℝ^(H×W×C₃)</text>
+      <text x="85" y="124" font-size="8.5" text-anchor="middle" fill="#64748b">O(N) Linear Global Context</text>
+      <text x="85" y="136" font-size="8" text-anchor="middle" fill="#64748b">Pre-trained ImageNet-1K</text>
+    </g>
+
+    <!-- Fusion: Cross-Attention Module -->
+    <g transform="translate(15, 508)">
+      <rect width="170" height="215" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+      <image href="data:image/png;base64,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" x="58" y="8" width="55" height="50" preserveAspectRatio="xMidYMid slice"/>
+      <text x="85" y="74" font-size="11.5" font-weight="800" text-anchor="middle" fill="#1e3a8a">Cross-Attention Fusion</text>
+      <text x="85" y="90" font-size="9.5" text-anchor="middle" fill="#2563eb">Query-Key Interaction</text>
+      <text x="85" y="104" font-size="9" text-anchor="middle" fill="#64748b">Softmax(QK^T / √d_k) · V</text>
+      <rect x="12" y="114" width="146" height="42" rx="4" fill="#f0f9ff" stroke="#bae6fd" stroke-width="1"/>
+      <text x="85" y="130" font-size="9.5" font-weight="700" text-anchor="middle" fill="#0369a1">SE-Net Channel Gate</text>
+      <text x="85" y="144" font-size="8.5" text-anchor="middle" fill="#0284c7">Adaptive Weighting</text>
+      <text x="85" y="174" font-size="11" font-weight="800" text-anchor="middle" fill="#1e293b">Multi-Domain Token</text>
+      <text x="85" y="192" font-size="10.5" font-weight="800" text-anchor="middle" fill="#2563eb">F_c ∈ ℝ^(H×W×C_f)</text>
+    </g>
+
+    <!-- Internal Vertical Connectors -->
+    <path d="M 100 185 L 100 200" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+    <path d="M 100 335 L 100 350" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+    <path d="M 100 492 L 100 508" stroke="#3b82f6" stroke-width="1.8" marker-end="url(#arrow-blue)"/>
+  </g>
+
+  <!-- Transition Arrow: Encoders to Quantum Module -->
+  <g transform="translate(505, 620)">
+    <path d="M 0 0 L 55 0" stroke="#1e293b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="27" y="-12" font-size="9.5" font-weight="800" text-anchor="middle" fill="#0f172a">F_c Token</text>
+    <text x="27" y="16" font-size="8.5" font-weight="600" text-anchor="middle" fill="#64748b">C_f Features</text>
+  </g>
+
+  <!-- ==================== 3. QUANTUM FEATURE MODULE ==================== -->
+  <g id="panel-quantum" transform="translate(565, 80)">
+    <rect width="195" height="740" rx="12" fill="url(#grad-quantum)" stroke="#86efac" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="195" height="40" rx="12" fill="#bbf7d0"/>
+    <rect x="0" y="20" width="195" height="20" fill="#bbf7d0"/>
+    <!-- NO EMOJI! Clean typography -->
+    <text x="97" y="18" font-size="13" font-weight="800" text-anchor="middle" fill="#14532d">QUANTUM FEATURE</text>
+    <text x="97" y="33" font-size="12.5" font-weight="800" text-anchor="middle" fill="#14532d">MODULE</text>
+
+    <!-- PennyLane Badge -->
+    <g transform="translate(32, 50)">
+      <rect width="130" height="32" rx="16" fill="#ffffff" stroke="#16a34a" stroke-width="1.5"/>
+      <circle cx="20" cy="16" r="10" fill="#dcfce7"/>
+      <text x="20" y="20" font-size="11" font-weight="800" text-anchor="middle" fill="#15803d">PL</text>
+      <text x="75" y="21" font-size="12" font-weight="800" fill="#166534">PennyLane</text>
+    </g>
+
+    <!-- Linear Projection Sub-block -->
+    <g transform="translate(15, 94)">
+      <rect width="165" height="66" rx="6" fill="#ffffff" stroke="#86efac" stroke-width="1.2"/>
+      <text x="82" y="19" font-size="11" font-weight="700" text-anchor="middle" fill="#166534">Linear Projection</text>
+      <text x="82" y="36" font-size="9.5" text-anchor="middle" fill="#475569">Dimension Compression</text>
+      <text x="82" y="52" font-size="10.5" font-weight="700" text-anchor="middle" fill="#15803d">C_f → n_qubits (8)</text>
+    </g>
+
+    <!-- Parameterized Angle Encoding -->
+    <g transform="translate(15, 172)">
+      <rect width="165" height="88" rx="6" fill="#ffffff" stroke="#86efac" stroke-width="1.2"/>
+      <text x="82" y="19" font-size="11" font-weight="700" text-anchor="middle" fill="#166534">Angle Encoding</text>
+      <text x="82" y="38" font-size="10" font-weight="700" text-anchor="middle" fill="#15803d">|x_i⟩ = RY(θ_i·x_i)|0⟩</text>
+      <text x="82" y="54" font-size="9" text-anchor="middle" fill="#64748b">Feature-to-State Mapping</text>
+      <rect x="18" y="62" width="130" height="18" rx="4" fill="#f0fdf4"/>
+      <text x="82" y="75" font-size="8.5" font-weight="600" text-anchor="middle" fill="#166534">Trainable Scaling θ_i</text>
+    </g>
+
+    <!-- VQC Circuit Diagram -->
+    <g transform="translate(15, 272)">
+      <rect width="165" height="235" rx="8" fill="#ffffff" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="82" y="20" font-size="11.5" font-weight="800" text-anchor="middle" fill="#15803d">Variational Circuit (VQC)</text>
+      <image href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAABBCAIAAAAc62CJAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAAUs0lEQVR4nK1aW2xc13U973vvzPAhitSLsijTkikpkiXLcWxZrh3LjlM3MYLGBZq2bvOVfKTNRz5qFMhvvoJ+NCiaXzcxBCRWUjdBghZW7Uip7Ti2ZT1sxdHbEqkXSQ05Q87cxzln72KfOxxSlJTWQA+I0WjmPvbdj7XXXmd4gRky99LLL92zeXR08yYEwZgQyDjnjAGnJYEzrk1mnUU0ca2wPs0L632SJMi8MQoKqwAMQ+6dlqiktLZAROTMIzLGkTOGgjEmOLIlK9yFFtJhTCx8qZYehIjAgP5lTCIXTDJkXnDHhfOs4KpQ6urs3G/efu/69UmtozRNk1ry8IMP3r1hXcSZkFz6LMuzCIFzwRgwzsJtw807FuCtNnHOS7O6S3FG9tOT0cMBGcO4CBcU9CI9555LMPGN2cabR9+dmJz2jpvawFxasEhnQv3nG2+vHRjYMXbP2Ia7eqIKOs+lYFAIugxKsoT7BWuWWtC55y02kVkYTgjBCrYL5IhCkk0CKYrIhOdqqjl38M23r87ORX397Waukh4moCiKDKyIe6da6VtHP2QeHtq+DSNv87YgdwEDROYpKxhD8GSKoLsstaN83/XcbYJI34FEBsCBEotJz7hnskD+q7feuzrbQp2kbV+JqyPDI41mu9pTG796sT59XSSVPGsf/f25vr7+jSv7Ii44OMqI4CpAhIWbSqDrhgemVxRcMk65C4vGIaISTDiGzjlyFwqJRggGMgXuCmuNNnnGTl2auDqbelVj3muAioMd60d+d+5C1pp//MH73z929Hp93pvK9bY/9O6xr3z+8UhQmVw4e/7Xb72V5Ral2nn/rk9tH1NCMORSao5MCQHeIyATAsAbpRljzjljDGKojsUgopAgwXEA5gG4EGmRg1Af/P5cGyQ3FRRKa71m9crxj8+fOfPRxUvnDWf7PvsEculQpSjrrXyy3nAenSsuXLhw+dLlJ5/8/P27H3zppf0HDx7knHvv8zRDxDzNOAWaCyEiHUwRQilVFIVz7qYgCuQMuOLKo6as4hKYmWsXV6Zu+P6BuSKV6BjH3Y89ePzoMYy9R9acm5ttZdZ64DKKjCuKGzP1db1DiVbI2cDgquH160eiaPrG1E9+tP/z+556+cc/Hh8fX7ly5Ve/+tULH4+/8sorcRyPj48///zzW7du/e53v7tp06aTJ0+St3hwVsc0QCml5JqhQhBSx/WZZpT0WOuTSg0YmiSebTQ23btpvtUYHBw4c+78oV/9Nwacy9PcOTfXbukoypwHwaMkVoqe/Of//vM/2vvov7744tTU1AsvvDA0NPSzn/2sXq8fOHDg61//+te+9rX9+/f39fW98cYbQ0ND3/nOd27yFmEFBwDwzCMZS9BKEAi8J67Op8Xw4NoNa4dee/XgptG7n3v2S79958hUveU8Z1J4hzbPKrHgQjjwnGBMHXzt1amZWe/hi88888Vn/vjvvvkNB/Zfvv/9ZrN56tSpb33rW/ds2uQB+lescN6307Sdptt37BBSLppVOkxrYb11YJnkSprc+6EVAzZLVVxbs3JwRV/NtossdefPXdz1wGd23/+Zg68eEkINrV4922xYXgjMemqVosgEQlpkDz780N9+45uIvEgzIZnW+m/+6q937tqVJEm73X733XfjsBqNhrUWAOI4bjab/f39VKRLgggoHLCcCyckADiOtqeWjKxdZdtzm4bvmr42GemEi8g69frrb1d7BwbXrAXO1qwarMVGoNPoBwd6I6ONknFikiTyYDnHpBLNt1p/+fxf/NP3vvfiiy9++9vfvnLlilIqTVNrbRRFZcrPzc0lSRJFEbeYI3M/+PEPxrbeOzI6wjw1DVSAgtsCla5lNj57rf76O8eaDj798J40z4++d9QzbgF27NixedPdx48fLQo3U590841Nw4N/+tQfyXw24dCsT1nPV61aTd0DwEgBAHNzcwcPHhwdHd26dSsijo+Pj42NtVqt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" x="15" y="28" width="135" height="82" preserveAspectRatio="xMidYMid contain"/>
+      <line x1="12" y1="118" x2="153" y2="118" stroke="#e2e8f0" stroke-width="1"/>
+      <text x="82" y="136" font-size="10.5" font-weight="700" text-anchor="middle" fill="#0f172a">Circuit Architecture</text>
+      <text x="82" y="152" font-size="9.5" text-anchor="middle" fill="#475569">• Rotations: RY(θ) ⊗ RZ(φ)</text>
+      <text x="82" y="168" font-size="9.5" text-anchor="middle" fill="#475569">• CNOT Entanglement Chain</text>
+      <text x="82" y="184" font-size="9.5" text-anchor="middle" fill="#475569">• Circuit Depth: D = 4–8</text>
+      <text x="82" y="200" font-size="9.5" text-anchor="middle" fill="#475569">• Pauli-Z Measurement ⟨σ_z⟩</text>
+      <text x="82" y="220" font-size="9.5" font-weight="800" text-anchor="middle" fill="#15803d">default.qubit Simulator</text>
+    </g>
+
+    <!-- Output Token Card -->
+    <g transform="translate(15, 520)">
+      <rect width="165" height="205" rx="8" fill="#ffffff" stroke="#16a34a" stroke-width="2"/>
+      <circle cx="82" cy="40" r="24" fill="#dcfce7" stroke="#22c55e" stroke-width="1.5"/>
+      <text x="82" y="47" font-size="15" font-weight="800" text-anchor="middle" fill="#15803d">F_q</text>
+      <text x="82" y="86" font-size="11.5" font-weight="800" text-anchor="middle" fill="#0f172a">Quantum Token</text>
+      <text x="82" y="104" font-size="10.5" font-weight="800" text-anchor="middle" fill="#16a34a">F_q ∈ ℝ^(n_qubits)</text>
+      <text x="82" y="122" font-size="9" text-anchor="middle" fill="#64748b">Hilbert Space Features</text>
+      <rect x="15" y="132" width="135" height="46" rx="4" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1"/>
+      <text x="82" y="150" font-size="9" font-weight="700" text-anchor="middle" fill="#15803d">Injected into Bottleneck</text>
+      <text x="82" y="166" font-size="8.5" text-anchor="middle" fill="#475569">&amp; Severity MLP Fusion</text>
+    </g>
+
+    <!-- Connectors -->
+    <path d="M 97 160 L 97 172" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <path d="M 97 260 L 97 272" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arrow)"/>
+    <path d="M 97 507 L 97 520" stroke="#16a34a" stroke-width="1.8" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Transition Arrow: Quantum to Backbone -->
+  <g transform="translate(760, 420)">
+    <path d="M 0 0 L 45 0" stroke="#1e293b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="22" y="-12" font-size="9.5" font-weight="800" text-anchor="middle" fill="#0f172a">F_q Injection</text>
+    <text x="22" y="18" font-size="8.5" font-weight="600" text-anchor="middle" fill="#64748b">8-Qubit State</text>
+  </g>
+
+  <!-- ==================== 4. MAIN SEGMENTATION BACKBONE ==================== -->
+  <g id="panel-backbone" transform="translate(810, 80)">
+    <rect width="530" height="740" rx="12" fill="url(#grad-backbone)" stroke="#d8b4fe" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="530" height="40" rx="12" fill="#e9d5ff"/>
+    <rect x="0" y="20" width="530" height="20" fill="#e9d5ff"/>
+    <!-- NO EMOJI! Clean typography -->
+    <text x="265" y="19" font-size="14.5" font-weight="800" text-anchor="middle" fill="#581c87">MAIN SEGMENTATION BACKBONE</text>
+    <text x="265" y="34" font-size="11.5" font-weight="600" text-anchor="middle" fill="#7e22ce">U-Net Style Dual-Branch Segmentation Network</text>
+
+    <!-- ENCODER PATH (LEFT) -->
+    <!-- Stage 1 Encoder -->
+    <g transform="translate(16, 50)">
+      <rect width="175" height="98" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#block-shadow)"/>
+      <rect x="0" y="0" width="175" height="22" rx="8" fill="#f3e8ff"/>
+      <rect x="0" y="12" width="175" height="10" fill="#f3e8ff"/>
+      <text x="87" y="16" font-size="11" font-weight="800" text-anchor="middle" fill="#6b21a8">Stage 1 (Conv Modules)</text>
+      <!-- 3D Slab Graphic -->
+      <g transform="translate(8, 28)">
+        <polygon points="5,8 15,2 35,2 25,8" fill="#93c5fd"/>
+        <polygon points="25,8 35,2 35,48 25,54" fill="#3b82f6"/>
+        <polygon points="5,8 25,8 25,54 5,54" fill="#60a5fa"/>
+      </g>
+      <text x="52" y="44" font-size="9.5" font-weight="700" text-anchor="start" fill="#0f172a">Conv-BN-ReLU Stem</text>
+      <text x="52" y="58" font-size="9" text-anchor="start" fill="#475569">512×512 → 256×256</text>
+      <text x="52" y="72" font-size="9.5" font-weight="800" text-anchor="start" fill="#7c3aed">C = 64 Channels</text>
+      <text x="52" y="86" font-size="8.5" text-anchor="start" fill="#64748b">ResNet / SSM Stem</text>
+    </g>
+
+    <!-- Downsampling Arrow 1 -->
+    <g transform="translate(103, 148)">
+      <path d="M 0 0 L 0 32" stroke="#7e22ce" stroke-width="2" marker-end="url(#arrow-purple)"/>
+      <text x="15" y="18" font-size="8.5" font-weight="700" fill="#7e22ce">Downsample (2× Stride)</text>
+    </g>
+
+    <!-- Stage 2 Encoder -->
+    <g transform="translate(16, 182)">
+      <rect width="175" height="102" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#block-shadow)"/>
+      <rect x="0" y="0" width="175" height="22" rx="8" fill="#f3e8ff"/>
+      <rect x="0" y="12" width="175" height="10" fill="#f3e8ff"/>
+      <text x="87" y="16" font-size="11" font-weight="800" text-anchor="middle" fill="#6b21a8">Stage 2 (VSS Block 1)</text>
+      <!-- 3D Slab Graphic -->
+      <g transform="translate(8, 28)">
+        <polygon points="5,8 15,2 35,2 25,8" fill="#d8b4fe"/>
+        <polygon points="25,8 35,2 35,52 25,58" fill="#a855f7"/>
+        <polygon points="5,8 25,8 25,58 5,58" fill="#c084fc"/>
+      </g>
+      <text x="52" y="44" font-size="9.5" font-weight="700" text-anchor="start" fill="#0f172a">VSS SS2D Block</text>
+      <text x="52" y="58" font-size="9" text-anchor="start" fill="#475569">256×256 → 128×128</text>
+      <text x="52" y="72" font-size="9.5" font-weight="800" text-anchor="start" fill="#7c3aed">C = 128 Channels</text>
+      <!-- FFM Badge -->
+      <circle cx="152" cy="65" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+      <text x="152" y="69" font-size="8.5" font-weight="800" text-anchor="middle" fill="#15803d">FFM</text>
+    </g>
+
+    <!-- Downsampling Arrow 2 -->
+    <g transform="translate(103, 284)">
+      <path d="M 0 0 L 0 32" stroke="#7e22ce" stroke-width="2" marker-end="url(#arrow-purple)"/>
+      <text x="15" y="18" font-size="8.5" font-weight="700" fill="#7e22ce">Patch Merging (2×)</text>
+    </g>
+
+    <!-- Stage 3 Encoder -->
+    <g transform="translate(16, 318)">
+      <rect width="175" height="102" rx="8" fill="#ffffff" stroke="#9333ea" stroke-width="1.5" filter="url(#block-shadow)"/>
+      <rect x="0" y="0" width="175" height="22" rx="8" fill="#f3e8ff"/>
+      <rect x="0" y="12" width="175" height="10" fill="#f3e8ff"/>
+      <text x="87" y="16" font-size="11" font-weight="800" text-anchor="middle" fill="#6b21a8">Stage 3 (VSS Block 2)</text>
+      <!-- 3D Slab Graphic -->
+      <g transform="translate(8, 28)">
+        <polygon points="5,8 15,2 35,2 25,8" fill="#fed7aa"/>
+        <polygon points="25,8 35,2 35,52 25,58" fill="#f97316"/>
+        <polygon points="5,8 25,8 25,58 5,58" fill="#fb923c"/>
+      </g>
+      <text x="52" y="44" font-size="9.5" font-weight="700" text-anchor="start" fill="#0f172a">VSS SS2D Block</text>
+      <text x="52" y="58" font-size="9" text-anchor="start" fill="#475569">128×128 → 64×64</text>
+      <text x="52" y="72" font-size="9.5" font-weight="800" text-anchor="start" fill="#7c3aed">C = 256 Channels</text>
+      <!-- FFM Badge -->
+      <circle cx="152" cy="65" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+      <text x="152" y="69" font-size="8.5" font-weight="800" text-anchor="middle" fill="#15803d">FFM</text>
+    </g>
+
+    <!-- Downsampling Arrow 3 to Bottleneck -->
+    <path d="M 103 420 L 103 460 L 175 490" stroke="#7e22ce" stroke-width="2" marker-end="url(#arrow-purple)" fill="none"/>
+    <text x="90" y="450" font-size="8.5" font-weight="700" fill="#7e22ce">Downsample (2×)</text>
+
+    <!-- BOTTLENECK (STAGE 4 / VAC) -->
+    <g transform="translate(175, 450)">
+      <rect width="180" height="105" rx="10" fill="#ffffff" stroke="#e11d48" stroke-width="2" filter="url(#block-shadow)"/>
+      <rect x="0" y="0" width="180" height="22" rx="10" fill="#ffe4e6"/>
+      <rect x="0" y="12" width="180" height="10" fill="#ffe4e6"/>
+      <!-- NO EMOJI! Clean text -->
+      <text x="90" y="16" font-size="11" font-weight="800" text-anchor="middle" fill="#9f1239">BOTTLENECK (STAGE 4)</text>
+      <text x="90" y="38" font-size="10" font-weight="700" text-anchor="middle" fill="#0f172a">Quantum Attention Injection</text>
+      <rect x="25" y="46" width="130" height="22" rx="4" fill="#fef2f2" stroke="#fecdd3" stroke-width="1"/>
+      <text x="90" y="61" font-size="11" font-weight="800" text-anchor="middle" fill="#be123c">VAC MODULE</text>
+      <text x="90" y="82" font-size="9.5" font-weight="800" text-anchor="middle" fill="#e11d48">32×32, C = 512</text>
+      <text x="90" y="96" font-size="8.5" text-anchor="middle" fill="#64748b">Concat[F_bottleneck, F_q]</text>
+    </g>
+
+    <!-- Upsampling Arrow from Bottleneck to Decoder Stage 3' -->
+    <path d="M 355 490 L 427 460 L 427 425" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)" fill="none"/>
+    <text x="390" y="450" font-size="8.5" font-weight="700" fill="#2563eb">Upsample (2×)</text>
+
+    <!-- DECODER PATH (RIGHT) -->
+    <!-- Decoder Stage 3' -->
+    <g transform="translate(340, 318)">
+      <rect width="175" height="102" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#block-shadow)"/>
+      <rect x="0" y="0" width="175" height="22" rx="8" fill="#dbeafe"/>
+      <rect x="0" y="12" width="175" height="10" fill="#dbeafe"/>
+      <text x="87" y="16" font-size="11" font-weight="800" text-anchor="middle" fill="#1e40af">Decoder Stage 3'</text>
+      <!-- 3D Slab Graphic -->
+      <g transform="translate(8, 28)">
+        <polygon points="5,8 15,2 35,2 25,8" fill="#fed7aa"/>
+        <polygon points="25,8 35,2 35,52 25,58" fill="#f97316"/>
+        <polygon points="5,8 25,8 25,58 5,58" fill="#fb923c"/>
+      </g>
+      <text x="52" y="44" font-size="9.5" font-weight="700" text-anchor="start" fill="#0f172a">ConvTranspose2d</text>
+      <text x="52" y="58" font-size="9" text-anchor="start" fill="#475569">32×32 → 64×64</text>
+      <text x="52" y="72" font-size="9.5" font-weight="800" text-anchor="start" fill="#2563eb">C = 256 Channels</text>
+      <!-- FFM Badge -->
+      <circle cx="152" cy="65" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+      <text x="152" y="69" font-size="8.5" font-weight="800" text-anchor="middle" fill="#15803d">FFM</text>
+    </g>
+
+    <!-- Upsampling Arrow 2 -->
+    <g transform="translate(427, 318)">
+      <path d="M 0 0 L 0 -30" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+      <text x="-12" y="-13" font-size="8.5" font-weight="700" fill="#2563eb" text-anchor="end">ConvTranspose (2×)</text>
+    </g>
+
+    <!-- Decoder Stage 2' -->
+    <g transform="translate(340, 182)">
+      <rect width="175" height="102" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#block-shadow)"/>
+      <rect x="0" y="0" width="175" height="22" rx="8" fill="#dbeafe"/>
+      <rect x="0" y="12" width="175" height="10" fill="#dbeafe"/>
+      <text x="87" y="16" font-size="11" font-weight="800" text-anchor="middle" fill="#1e40af">Decoder Stage 2'</text>
+      <!-- 3D Slab Graphic -->
+      <g transform="translate(8, 28)">
+        <polygon points="5,8 15,2 35,2 25,8" fill="#d8b4fe"/>
+        <polygon points="25,8 35,2 35,52 25,58" fill="#a855f7"/>
+        <polygon points="5,8 25,8 25,58 5,58" fill="#c084fc"/>
+      </g>
+      <text x="52" y="44" font-size="9.5" font-weight="700" text-anchor="start" fill="#0f172a">ConvTranspose2d</text>
+      <text x="52" y="58" font-size="9" text-anchor="start" fill="#475569">64×64 → 128×128</text>
+      <text x="52" y="72" font-size="9.5" font-weight="800" text-anchor="start" fill="#2563eb">C = 128 Channels</text>
+      <!-- FFM Badge -->
+      <circle cx="152" cy="65" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+      <text x="152" y="69" font-size="8.5" font-weight="800" text-anchor="middle" fill="#15803d">FFM</text>
+    </g>
+
+    <!-- Upsampling Arrow 3 -->
+    <g transform="translate(427, 182)">
+      <path d="M 0 0 L 0 -30" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow-blue)"/>
+      <text x="-12" y="-13" font-size="8.5" font-weight="700" fill="#2563eb" text-anchor="end">ConvTranspose (2×)</text>
+    </g>
+
+    <!-- Decoder Stage 1' -->
+    <g transform="translate(340, 50)">
+      <rect width="175" height="98" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5" filter="url(#block-shadow)"/>
+      <rect x="0" y="0" width="175" height="22" rx="8" fill="#dbeafe"/>
+      <rect x="0" y="12" width="175" height="10" fill="#dbeafe"/>
+      <text x="87" y="16" font-size="11" font-weight="800" text-anchor="middle" fill="#1e40af">Decoder Stage 1'</text>
+      <!-- 3D Slab Graphic -->
+      <g transform="translate(8, 28)">
+        <polygon points="5,8 15,2 35,2 25,8" fill="#93c5fd"/>
+        <polygon points="25,8 35,2 35,48 25,54" fill="#3b82f6"/>
+        <polygon points="5,8 25,8 25,54 5,54" fill="#60a5fa"/>
+      </g>
+      <text x="52" y="44" font-size="9.5" font-weight="700" text-anchor="start" fill="#0f172a">Upsample + Conv</text>
+      <text x="52" y="58" font-size="9" text-anchor="start" fill="#475569">128×128 → 512×512</text>
+      <text x="52" y="72" font-size="9.5" font-weight="800" text-anchor="start" fill="#2563eb">C = 64 → 1</text>
+      <text x="52" y="86" font-size="8.5" text-anchor="start" fill="#64748b">1×1 Conv → Sigmoid Head</text>
+    </g>
+
+    <!-- ================= SKIP CONNECTIONS ================= -->
+    <!-- Skip 1 (Top) -->
+    <path d="M 191 99 L 335 99" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+    <rect x="210" y="87" width="105" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="262" y="103" font-size="9" font-weight="800" text-anchor="middle" fill="#334155">Skip 1: 512×512, C=64</text>
+
+    <!-- Skip 2 (Middle) -->
+    <path d="M 191 233 L 335 233" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+    <rect x="205" y="221" width="115" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="262" y="237" font-size="9" font-weight="800" text-anchor="middle" fill="#334155">Skip 2: 128×128, C=128</text>
+
+    <!-- Skip 3 (Lower) -->
+    <path d="M 191 369 L 335 369" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+    <rect x="205" y="357" width="115" height="24" rx="4" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="262" y="373" font-size="9" font-weight="800" text-anchor="middle" fill="#334155">Skip 3: 64×64, C=256</text>
+
+    <!-- Supervised Loss Arrow down -->
+    <path d="M 265 560 L 265 595" stroke="#0284c7" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrow-dashed)"/>
+    <text x="265" y="582" font-size="9" font-weight="800" text-anchor="middle" fill="#0369a1" dx="55">Loss Supervision (L_seg)</text>
+
+    <!-- Optimization Module Box -->
+    <g transform="translate(55, 600)">
+      <rect width="420" height="98" rx="8" fill="url(#grad-optim)" stroke="#38bdf8" stroke-width="1.8"/>
+      <text x="210" y="22" font-size="12" font-weight="800" text-anchor="middle" fill="#0369a1">OPTIMIZATION MODULE: HYBRID MULTI-TASK LOSS</text>
+      <text x="210" y="42" font-size="11" font-weight="800" text-anchor="middle" fill="#0f172a">L_total = α·L_seg + β·L_sev + γ·L_dam</text>
+      <text x="210" y="60" font-size="9.5" text-anchor="middle" fill="#475569">L_seg = BCE + Dice + 3×Boundary_BCE  |  L_sev = CE + LabelSmooth(0.1)</text>
+      <text x="210" y="78" font-size="9.5" font-weight="700" text-anchor="middle" fill="#0284c7">Bayesian Optimization (Optuna TPE) • Parameter-Shift Rule for VQC</text>
+    </g>
+
+    <!-- Feedback Loop Arrow to Models (Routes cleanly under all panels) -->
+    <path d="M 55 650 L 12 650 L 12 755 L -425 755 L -425 615" stroke="#0284c7" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-dashed)" fill="none"/>
+    <text x="-210" y="747" font-size="9.5" font-weight="800" text-anchor="middle" fill="#0284c7">Feedback (θ*) Parameter Updates via Adam &amp; Parameter-Shift Rule</text>
+  </g>
+
+  <!-- Backbone Output to Segmentation Mask Thumbnail -->
+  <g transform="translate(1325, 180)">
+    <path d="M 0 0 L 45 0" stroke="#1e293b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="22" y="-10" font-size="9" font-weight="800" text-anchor="middle" fill="#1e293b">Logits</text>
+  </g>
+
+  <!-- Segmentation Mask Card (Pure Vector) -->
+  <g transform="translate(1375, 125)">
+    <rect width="95" height="115" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <g transform="translate(12, 10)">
+      <rect width="71" height="68" rx="4" fill="#1e1b4b"/>
+      <!-- Multi-tone crack heatmap -->
+      <path d="M 35 5 Q 32 22 38 38 T 44 63" stroke="#a855f7" stroke-width="6" fill="none" opacity="0.6"/>
+      <path d="M 38 38 Q 50 48 58 56" stroke="#a855f7" stroke-width="4.5" fill="none" opacity="0.6"/>
+      <path d="M 35 24 Q 22 32 15 42" stroke="#a855f7" stroke-width="4.5" fill="none" opacity="0.6"/>
+      <!-- Core crack line -->
+      <path d="M 35 5 Q 32 22 38 38 T 44 63" stroke="#e9d5ff" stroke-width="2" fill="none"/>
+      <path d="M 38 38 Q 50 48 58 56" stroke="#e9d5ff" stroke-width="1.6" fill="none"/>
+      <path d="M 35 24 Q 22 32 15 42" stroke="#e9d5ff" stroke-width="1.6" fill="none"/>
+    </g>
+    <text x="47" y="93" font-size="10" font-weight="800" text-anchor="middle" fill="#0f172a">Segmentation</text>
+    <text x="47" y="106" font-size="9.5" font-weight="700" text-anchor="middle" fill="#7c3aed">Mask (M_seg)</text>
+  </g>
+
+  <!-- Arrow into Refinement -->
+  <g transform="translate(1470, 180)">
+    <path d="M 0 0 L 40 0" stroke="#1e293b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- ==================== 5. QUANTUM-ENHANCED BOUNDARY REFINEMENT MODULE ==================== -->
+  <g id="panel-refinement" transform="translate(1515, 80)">
+    <rect width="185" height="315" rx="12" fill="url(#grad-refine)" stroke="#fda4af" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="185" height="40" rx="12" fill="#fecdd3"/>
+    <rect x="0" y="20" width="185" height="20" fill="#fecdd3"/>
+    <!-- NO EMOJI! Clean professional text -->
+    <text x="92" y="18" font-size="12" font-weight="800" text-anchor="middle" fill="#9f1239">QUANTUM-ENHANCED</text>
+    <text x="92" y="33" font-size="11.5" font-weight="800" text-anchor="middle" fill="#9f1239">BOUNDARY REFINEMENT</text>
+
+    <!-- Sub-block 1: Quantum Attention -->
+    <g transform="translate(15, 52)">
+      <rect width="155" height="78" rx="6" fill="#ffffff" stroke="#fb7185" stroke-width="1.2"/>
+      <text x="77" y="22" font-size="11.5" font-weight="800" text-anchor="middle" fill="#be123c">Quantum Attention</text>
+      <text x="77" y="38" font-size="9.5" text-anchor="middle" fill="#475569">Kernel State Fidelity</text>
+      <text x="77" y="52" font-size="9" font-weight="700" text-anchor="middle" fill="#e11d48">K(p_i, p_j) = |⟨ψ_i|ψ_j⟩|²</text>
+      <text x="77" y="68" font-size="8.5" text-anchor="middle" fill="#64748b">Hilbert Boundary Focus</text>
+    </g>
+
+    <!-- Arrow down -->
+    <path d="M 92 132 L 92 160" stroke="#e11d48" stroke-width="2" marker-end="url(#arrow-rose)"/>
+    <text x="130" y="148" font-size="8.5" font-weight="700" fill="#e11d48">Kernel Guidance</text>
+
+    <!-- Sub-block 2: Refinement Head -->
+    <g transform="translate(15, 168)">
+      <rect width="155" height="115" rx="6" fill="#ffffff" stroke="#fb7185" stroke-width="1.2"/>
+      <text x="77" y="22" font-size="11.5" font-weight="800" text-anchor="middle" fill="#be123c">Refinement Head</text>
+      <text x="77" y="40" font-size="9.5" text-anchor="middle" fill="#475569">Dense CRF Integration</text>
+      <text x="77" y="56" font-size="9" text-anchor="middle" fill="#475569">Boundary Weighted BCE</text>
+      <text x="77" y="72" font-size="9" text-anchor="middle" fill="#475569">Morphological Cleanup</text>
+      <text x="77" y="90" font-size="8.5" font-weight="700" text-anchor="middle" fill="#be123c">Removes &lt;50px Islands</text>
+      <text x="77" y="104" font-size="8.5" text-anchor="middle" fill="#64748b">Single-pixel Hole Filling</text>
+    </g>
+  </g>
+
+  <!-- Transition Arrow: Refinement to Binary Crack Mask -->
+  <g transform="translate(1700, 180)">
+    <path d="M 0 0 L 40 0" stroke="#1e293b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Binary Crack Mask Card (Pure Vector) -->
+  <g transform="translate(1745, 125)">
+    <rect width="95" height="115" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <g transform="translate(12, 10)">
+      <rect width="71" height="68" rx="4" fill="#020617"/>
+      <!-- Fine white skeleton crack lines -->
+      <path d="M 35 5 Q 32 22 38 38 T 44 63" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+      <path d="M 38 38 Q 50 48 58 56" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none"/>
+      <path d="M 35 24 Q 22 32 15 42" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none"/>
+    </g>
+    <text x="47" y="93" font-size="10" font-weight="800" text-anchor="middle" fill="#0f172a">Binary Crack</text>
+    <text x="47" y="106" font-size="9.5" font-weight="700" text-anchor="middle" fill="#1e293b">Mask (M_crack)</text>
+  </g>
+
+  <!-- Transition Arrow: Binary Mask to Final Outputs -->
+  <g transform="translate(1840, 180)">
+    <path d="M 0 0 L 35 0" stroke="#1e293b" stroke-width="2.5" marker-end="url(#arrow)"/>
+  </g>
+
+  <!-- Path from Binary Mask down to Structural & Severity Modules -->
+  <path d="M 1792 240 L 1792 415 L 1445 415 L 1445 435" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arrow)" fill="none"/>
+  <text x="1610" y="407" font-size="9.5" font-weight="800" text-anchor="middle" fill="#1e293b">Downstream Flow: Mask to Structural &amp; Severity Modules</text>
+
+  <!-- ==================== 6. STRUCTURAL DESCRIPTOR LEARNING ==================== -->
+  <g id="panel-structural" transform="translate(1365, 435)">
+    <rect width="155" height="385" rx="12" fill="url(#grad-struct)" stroke="#fcd34d" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="155" height="40" rx="12" fill="#fde68a"/>
+    <rect x="0" y="20" width="155" height="20" fill="#fde68a"/>
+    <text x="77" y="18" font-size="12" font-weight="800" text-anchor="middle" fill="#78350f">STRUCTURAL</text>
+    <text x="77" y="32" font-size="11.5" font-weight="800" text-anchor="middle" fill="#78350f">DESCRIPTORS</text>
+
+    <!-- Structural Graphic -->
+    <g transform="translate(25, 48)">
+      <image href="data:image/png;base64,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" x="15" y="0" width="75" height="72" preserveAspectRatio="xMidYMid contain"/>
+    </g>
+
+    <!-- Sub-block 1: Geometry -->
+    <g transform="translate(12, 126)">
+      <rect width="131" height="70" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+      <text x="65" y="17" font-size="10" font-weight="800" text-anchor="middle" fill="#b45309">Crack Geometry</text>
+      <text x="65" y="32" font-size="8.5" text-anchor="middle" fill="#475569">Zhang-Suen Thinning</text>
+      <text x="65" y="46" font-size="8.5" text-anchor="middle" fill="#475569">Euclidean Dist Trans</text>
+      <text x="65" y="60" font-size="8.5" font-weight="700" text-anchor="middle" fill="#78350f">Length, Width, Area</text>
+    </g>
+
+    <!-- Sub-block 2: Topology -->
+    <g transform="translate(12, 204)">
+      <rect width="131" height="70" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+      <text x="65" y="17" font-size="10" font-weight="800" text-anchor="middle" fill="#b45309">Distress Topology</text>
+      <text x="65" y="32" font-size="8.5" text-anchor="middle" fill="#475569">Density ρ = A_c / A_t</text>
+      <text x="65" y="46" font-size="8.5" text-anchor="middle" fill="#475569">8-Connected Comps</text>
+      <text x="65" y="60" font-size="8.5" font-weight="700" text-anchor="middle" fill="#78350f">Branching Junctions</text>
+    </g>
+
+    <!-- Sub-block 3: Network -->
+    <g transform="translate(12, 282)">
+      <rect width="131" height="85" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="1"/>
+      <text x="65" y="17" font-size="10" font-weight="800" text-anchor="middle" fill="#b45309">Network Graph</text>
+      <text x="65" y="32" font-size="8.5" text-anchor="middle" fill="#475569">Nodes: Junctions</text>
+      <text x="65" y="46" font-size="8.5" text-anchor="middle" fill="#475569">Edges: Crack Segments</text>
+      <text x="65" y="60" font-size="8.5" text-anchor="middle" fill="#64748b">18-Bin Orientation Hist</text>
+      <text x="65" y="75" font-size="9" font-weight="800" text-anchor="middle" fill="#b45309">Vector F_g ∈ ℝ^d</text>
+    </g>
+  </g>
+
+  <!-- Arrow from Structural to Severity -->
+  <g transform="translate(1520, 630)">
+    <path d="M 0 0 L 35 0" stroke="#1e293b" stroke-width="2.5" marker-end="url(#arrow)"/>
+    <text x="17" y="-10" font-size="9" font-weight="800" text-anchor="middle" fill="#78350f">F_g</text>
+  </g>
+
+  <!-- ==================== 7. SEVERITY / PCI / DETERIORATION ==================== -->
+  <g id="panel-severity" transform="translate(1560, 435)">
+    <rect width="210" height="385" rx="12" fill="url(#grad-severity)" stroke="#fdba74" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="210" height="40" rx="12" fill="#fed7aa"/>
+    <rect x="0" y="20" width="210" height="20" fill="#fed7aa"/>
+    <!-- NO EMOJI! Clean professional text -->
+    <text x="105" y="18" font-size="12" font-weight="800" text-anchor="middle" fill="#9a3412">SEVERITY, PCI &amp;</text>
+    <text x="105" y="32" font-size="11.5" font-weight="800" text-anchor="middle" fill="#9a3412">DETERIORATION MODELING</text>
+
+    <!-- Sub-block 1: Severity Prediction (Hybrid Quantum NN) -->
+    <g transform="translate(14, 48)">
+      <rect width="182" height="120" rx="6" fill="#ffffff" stroke="#f97316" stroke-width="1.5"/>
+      <!-- NO EMOJI! -->
+      <text x="91" y="18" font-size="11" font-weight="800" text-anchor="middle" fill="#c2410c">Severity Prediction</text>
+      <text x="91" y="33" font-size="9.5" font-weight="700" text-anchor="middle" fill="#ea580c">Hybrid Quantum NN</text>
+      <line x1="8" y1="39" x2="174" y2="39" stroke="#fed7aa" stroke-width="1"/>
+      <text x="91" y="53" font-size="8.5" text-anchor="middle" fill="#475569">Fusion: [F_curv,F_tex,F_sem,F_g,F_q]</text>
+      <text x="91" y="67" font-size="8.5" text-anchor="middle" fill="#475569">Head: FC(d→128→64→8) → Tanh</text>
+      <text x="91" y="82" font-size="9.5" font-weight="700" text-anchor="middle" fill="#c2410c">6-Layer VQC + Pauli-Z</text>
+      <text x="91" y="96" font-size="8.5" text-anchor="middle" fill="#475569">Tail: FC(8→32→4) → Softmax</text>
+      <rect x="25" y="100" width="132" height="15" rx="3" fill="#ffedd5"/>
+      <text x="91" y="112" font-size="8.5" font-weight="800" text-anchor="middle" fill="#9a3412">Outputs: Severity &amp; DI</text>
+    </g>
+
+    <!-- Arrow down -->
+    <path d="M 105 170 L 105 184" stroke="#f97316" stroke-width="1.8" marker-end="url(#arrow-orange)"/>
+
+    <!-- Sub-block 2: PCI Estimation -->
+    <g transform="translate(14, 186)">
+      <rect width="182" height="96" rx="6" fill="#ffffff" stroke="#f97316" stroke-width="1.2"/>
+      <text x="91" y="18" font-size="11" font-weight="800" text-anchor="middle" fill="#c2410c">PCI Estimation</text>
+      <!-- Gauge Graphic -->
+      <path d="M 66 45 A 25 25 0 0 1 116 45" fill="none" stroke="#22c55e" stroke-width="5"/>
+      <path d="M 91 45 A 25 25 0 0 1 116 45" fill="none" stroke="#eab308" stroke-width="5"/>
+      <path d="M 107 45 A 25 25 0 0 1 116 45" fill="none" stroke="#ef4444" stroke-width="5"/>
+      <line x1="91" y1="45" x2="100" y2="29" stroke="#0f172a" stroke-width="2"/>
+      <text x="91" y="63" font-size="9" text-anchor="middle" fill="#475569">ASTM D6433 Standard</text>
+      <text x="91" y="76" font-size="9" text-anchor="middle" fill="#475569">TDV = Σ Deducts | CDV Curve</text>
+      <text x="91" y="90" font-size="9.5" font-weight="800" text-anchor="middle" fill="#c2410c">PCI = 100 - max(CDV)</text>
+    </g>
+
+    <!-- Arrow down -->
+    <path d="M 105 284 L 105 298" stroke="#f97316" stroke-width="1.8" marker-end="url(#arrow-orange)"/>
+
+    <!-- Sub-block 3: Deterioration Modeling -->
+    <g transform="translate(14, 300)">
+      <rect width="182" height="74" rx="6" fill="#ffffff" stroke="#f97316" stroke-width="1.2"/>
+      <text x="91" y="18" font-size="11" font-weight="800" text-anchor="middle" fill="#c2410c">Deterioration Modeling</text>
+      <path d="M 35 48 Q 85 45 110 32 T 155 22" fill="none" stroke="#f97316" stroke-width="2.2"/>
+      <text x="91" y="56" font-size="9" text-anchor="middle" fill="#475569">Markov Chain / Sigmoidal</text>
+      <text x="91" y="69" font-size="8.5" font-weight="700" text-anchor="middle" fill="#9a3412">Maintenance Urgency Index</text>
+    </g>
+  </g>
+
+  <!-- Arrows from Severity Module to Final Outputs -->
+  <g transform="translate(1770, 495)">
+    <path d="M 0 0 L 105 0" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arrow)"/>
+    <text x="52" y="-10" font-size="9.5" font-weight="800" text-anchor="middle" fill="#c2410c">DI &amp; Severity</text>
+  </g>
+
+  <g transform="translate(1770, 650)">
+    <path d="M 0 0 L 105 0" stroke="#1e293b" stroke-width="2.2" marker-end="url(#arrow)"/>
+    <text x="52" y="-10" font-size="9.5" font-weight="800" text-anchor="middle" fill="#c2410c">PCI Metric</text>
+  </g>
+
+  <!-- ==================== 8. FINAL OUTPUTS ==================== -->
+  <g id="panel-outputs" transform="translate(1875, 80)">
+    <rect width="185" height="740" rx="12" fill="url(#grad-outputs)" stroke="#94a3b8" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="185" height="40" rx="12" fill="#cbd5e1"/>
+    <rect x="0" y="20" width="185" height="20" fill="#cbd5e1"/>
+    <text x="92" y="26" font-size="13.5" font-weight="800" text-anchor="middle" fill="#0f172a">FINAL OUTPUTS</text>
+
+    <!-- Output 1: Refined Crack Mask -->
+    <g transform="translate(17, 50)">
+      <rect width="150" height="152" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+      <g transform="translate(40, 10)">
+        <rect width="70" height="68" rx="4" fill="#020617"/>
+        <path d="M 35 5 Q 32 22 38 38 T 44 63" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <path d="M 38 38 Q 50 48 58 56" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none"/>
+        <path d="M 35 24 Q 22 32 15 42" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none"/>
+      </g>
+      <text x="75" y="104" font-size="10.5" font-weight="800" text-anchor="middle" fill="#0f172a">Refined Binary Crack</text>
+      <text x="75" y="120" font-size="10" font-weight="800" text-anchor="middle" fill="#2563eb">Segmentation Mask</text>
+      <text x="75" y="136" font-size="9" text-anchor="middle" fill="#64748b">Pixel-level Boundary</text>
+    </g>
+
+    <!-- Output 2: Severity Classification -->
+    <g transform="translate(17, 220)">
+      <rect width="150" height="152" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+      <!-- Traffic Light Circles -->
+      <circle cx="45" cy="30" r="13" fill="#22c55e"/>
+      <circle cx="75" cy="30" r="13" fill="#eab308"/>
+      <circle cx="105" cy="30" r="13" fill="#ef4444"/>
+      <text x="75" y="62" font-size="11.5" font-weight="800" text-anchor="middle" fill="#0f172a">Severity Rating</text>
+      <text x="75" y="80" font-size="9" text-anchor="middle" fill="#475569">• Low (0): &lt;1mm Hairline</text>
+      <text x="75" y="94" font-size="9" text-anchor="middle" fill="#475569">• Moderate (1): 1–3mm</text>
+      <text x="75" y="108" font-size="9" text-anchor="middle" fill="#475569">• Severe (2): 3–10mm</text>
+      <text x="75" y="122" font-size="9" text-anchor="middle" fill="#475569">• Critical (3): &gt;10mm Netz</text>
+      <text x="75" y="138" font-size="9.5" font-weight="800" text-anchor="middle" fill="#ea580c">4-Level ASTM Label</text>
+    </g>
+
+    <!-- Output 3: Pavement Damage Index (PDI) -->
+    <g transform="translate(17, 390)">
+      <rect width="150" height="152" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+      <!-- Gauge -->
+      <path d="M 40 60 A 35 35 0 0 1 110 60" fill="none" stroke="#22c55e" stroke-width="8"/>
+      <path d="M 75 60 A 35 35 0 0 1 110 60" fill="none" stroke="#eab308" stroke-width="8"/>
+      <path d="M 95 60 A 35 35 0 0 1 110 60" fill="none" stroke="#ef4444" stroke-width="8"/>
+      <line x1="75" y1="60" x2="93" y2="38" stroke="#0f172a" stroke-width="2.5"/>
+      <circle cx="75" cy="60" r="4" fill="#0f172a"/>
+      <text x="75" y="86" font-size="11.5" font-weight="800" text-anchor="middle" fill="#0f172a">Damage Index (DI)</text>
+      <text x="75" y="102" font-size="9.5" text-anchor="middle" fill="#475569">Pavement Distress (PDI)</text>
+      <text x="75" y="118" font-size="9" text-anchor="middle" fill="#64748b">Composite Extent Score</text>
+      <text x="75" y="136" font-size="10.5" font-weight="800" text-anchor="middle" fill="#c2410c">Score: 0.68 / 1.0</text>
+    </g>
+
+    <!-- Output 4: Pavement Condition Index (PCI) -->
+    <g transform="translate(17, 560)">
+      <rect width="150" height="152" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+      <!-- Bar Chart -->
+      <rect x="38" y="42" width="18" height="35" fill="#ef4444" rx="2"/>
+      <rect x="63" y="29" width="18" height="48" fill="#eab308" rx="2"/>
+      <rect x="88" y="15" width="18" height="62" fill="#22c55e" rx="2"/>
+      <line x1="28" y1="77" x2="122" y2="77" stroke="#94a3b8" stroke-width="1.5"/>
+      <text x="75" y="98" font-size="11.5" font-weight="800" text-anchor="middle" fill="#0f172a">PCI Assessment</text>
+      <text x="75" y="114" font-size="12" font-weight="800" text-anchor="middle" fill="#16a34a">Score: 78 / 100</text>
+      <text x="75" y="130" font-size="9" text-anchor="middle" fill="#475569">Condition: Satisfactory</text>
+      <text x="75" y="142" font-size="8.5" text-anchor="middle" fill="#64748b">ASTM D6433 Survey</text>
+    </g>
+  </g>
+
+  <!-- ==================== 9. LEGEND (EXACTLY MATCHING REFERENCE IMAGE!) ==================== -->
+  <g id="panel-legend" transform="translate(2080, 80)">
+    <rect width="320" height="740" rx="12" fill="url(#grad-legend)" stroke="#64748b" stroke-width="1.5" filter="url(#card-shadow)"/>
+    <rect x="0" y="0" width="320" height="40" rx="12" fill="#f1f5f9"/>
+    <rect x="0" y="20" width="320" height="20" fill="#f1f5f9"/>
+    <text x="160" y="26" font-size="14" font-weight="800" text-anchor="middle" fill="#0f172a">LEGEND &amp; NOTATION</text>
+
+    <!-- SECTION 1: ARROW STYLES -->
+    <g transform="translate(15, 52)">
+      <text x="0" y="14" font-size="11.5" font-weight="800" fill="#0f172a">1. Transition &amp; Arrow Types</text>
+      
+      <!-- Input / Output Arrow -->
+      <g transform="translate(0, 26)">
+        <path d="M 5 8 L 55 8" stroke="#1e293b" stroke-width="3" marker-end="url(#arrow)"/>
+        <text x="70" y="12" font-size="10.5" font-weight="700" fill="#1e293b">Input / Output Data Flow</text>
+      </g>
+
+      <!-- Skip Connection Arrow -->
+      <g transform="translate(0, 52)">
+        <path d="M 5 8 L 55 8" stroke="#64748b" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow)"/>
+        <text x="70" y="12" font-size="10.5" font-weight="700" fill="#334155">Skip Connection (U-Net)</text>
+      </g>
+
+      <!-- Downsampling Transition Arrow -->
+      <g transform="translate(0, 78)">
+        <path d="M 30 2 L 30 20" stroke="#7e22ce" stroke-width="2.5" marker-end="url(#arrow-purple)"/>
+        <text x="70" y="14" font-size="10.5" font-weight="700" fill="#6b21a8">Downsampling (Stride 2)</text>
+      </g>
+
+      <!-- Upsampling Transition Arrow -->
+      <g transform="translate(0, 104)">
+        <path d="M 30 20 L 30 2" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow-blue)"/>
+        <text x="70" y="14" font-size="10.5" font-weight="700" fill="#1e40af">Upsampling (ConvTranspose)</text>
+      </g>
+
+      <!-- Loss / Feedback Loop Arrow -->
+      <g transform="translate(0, 130)">
+        <path d="M 5 8 L 55 8" stroke="#0284c7" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#arrow-dashed)"/>
+        <text x="70" y="12" font-size="10.5" font-weight="700" fill="#0369a1">Feedback / Supervision (θ*)</text>
+      </g>
+    </g>
+
+    <line x1="15" y1="210" x2="305" y2="210" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- SECTION 2: OPERATOR SYMBOLS -->
+    <g transform="translate(15, 222)">
+      <text x="0" y="14" font-size="11.5" font-weight="800" fill="#0f172a">2. Mathematical Operators &amp; Blocks</text>
+
+      <!-- Addition -->
+      <g transform="translate(10, 24)">
+        <circle cx="15" cy="8" r="10" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+        <text x="15" y="12" font-size="13" font-weight="700" text-anchor="middle" fill="#0f172a">⊕</text>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e293b">Element-wise Addition</text>
+      </g>
+
+      <!-- Channel Concatenation -->
+      <g transform="translate(10, 50)">
+        <circle cx="15" cy="8" r="10" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+        <text x="15" y="12" font-size="12" font-weight="800" text-anchor="middle" fill="#0f172a">C</text>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e293b">Channel Concatenation</text>
+      </g>
+
+      <!-- Matrix Multiplication / Attention -->
+      <g transform="translate(10, 76)">
+        <circle cx="15" cy="8" r="10" fill="#f8fafc" stroke="#0f172a" stroke-width="1.5"/>
+        <text x="15" y="12" font-size="12" font-weight="700" text-anchor="middle" fill="#0f172a">⊗</text>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e293b">Matrix Multiplication</text>
+      </g>
+
+      <!-- VSS Block -->
+      <g transform="translate(10, 102)">
+        <rect x="3" y="-1" width="24" height="18" rx="4" fill="#f3e8ff" stroke="#9333ea" stroke-width="1.2"/>
+        <text x="15" y="12" font-size="9" font-weight="800" text-anchor="middle" fill="#6b21a8">VSS</text>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e293b">Visual State Space (SS2D)</text>
+      </g>
+
+      <!-- FFM Module -->
+      <g transform="translate(10, 128)">
+        <circle cx="15" cy="8" r="11" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+        <text x="15" y="12" font-size="8.5" font-weight="800" text-anchor="middle" fill="#15803d">FFM</text>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e293b">Feature Fusion Module</text>
+      </g>
+
+      <!-- VAC Module (NO EMOJI) -->
+      <g transform="translate(10, 154)">
+        <rect x="2" y="-1" width="26" height="18" rx="4" fill="#ffe4e6" stroke="#e11d48" stroke-width="1.2"/>
+        <text x="15" y="12" font-size="9" font-weight="800" text-anchor="middle" fill="#be123c">VAC</text>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e293b">Visual Attention Circuit</text>
+      </g>
+    </g>
+
+    <line x1="15" y1="410" x2="305" y2="410" stroke="#e2e8f0" stroke-width="1.5"/>
+
+    <!-- SECTION 3: FEATURE DOMAINS & COLOR CODES (MATCHING REFERENCE) -->
+    <g transform="translate(15, 425)">
+      <text x="0" y="14" font-size="11.5" font-weight="800" fill="#0f172a">3. Feature Domain Notation</text>
+
+      <!-- Curvilinear Feature -->
+      <g transform="translate(10, 24)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#93c5fd" stroke="#3b82f6" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e40af">Curvilinear Ridge (F_curv)</text>
+      </g>
+
+      <!-- Spectral Feature -->
+      <g transform="translate(10, 48)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#bfdbfe" stroke="#2563eb" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e40af">Spectral / Gabor (F_tex)</text>
+      </g>
+
+      <!-- Semantic Feature -->
+      <g transform="translate(10, 72)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#d8b4fe" stroke="#a855f7" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#6b21a8">Mamba Semantic (F_sem)</text>
+      </g>
+
+      <!-- Quantum Feature -->
+      <g transform="translate(10, 96)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#bbf7d0" stroke="#22c55e" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#15803d">Quantum VQC (F_q)</text>
+      </g>
+
+      <!-- Fused Feature -->
+      <g transform="translate(10, 120)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#fed7aa" stroke="#f97316" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#9a3412">Fused Vector (F_c / F_sev)</text>
+      </g>
+
+      <!-- Structural Feature -->
+      <g transform="translate(10, 144)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#fde68a" stroke="#eab308" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#854d0e">Structural Descriptors (F_g)</text>
+      </g>
+
+      <!-- Spatial Domain Feature Block (Matching reference SF) -->
+      <g transform="translate(10, 168)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#bbf7d0" stroke="#16a34a" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#14532d">Spatial Domain Feature (SF)</text>
+      </g>
+
+      <!-- Low Frequency Feature Block (Matching reference LF) -->
+      <g transform="translate(10, 192)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#93c5fd" stroke="#2563eb" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#1e40af">Low Frequency Feature (LF)</text>
+      </g>
+
+      <!-- High Frequency Feature Block (Matching reference HF) -->
+      <g transform="translate(10, 216)">
+        <rect x="5" y="0" width="20" height="16" rx="3" fill="#fed7aa" stroke="#ea580c" stroke-width="1"/>
+        <text x="45" y="12" font-size="10.5" font-weight="600" fill="#9a3412">High Frequency Feature (HF)</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== FOOTER / SUB-CAPTION (IEEE STYLE) ==================== -->
+  <g id="figure-caption" transform="translate(1210, 930)">
+    <text x="0" y="0" font-size="16" font-weight="800" text-anchor="middle" fill="#0f172a">(a) Overview of the Quantum-Enhanced Pavement Condition Monitoring System (Q-PCMS)</text>
+    <text x="0" y="22" font-size="12.5" font-weight="500" text-anchor="middle" fill="#64748b">Detailed layer-wise dual-branch U-Net backbone with Visual State Space (VSS) blocks, Feature Fusion Modules (FFM), Variational Quantum Attention Circuit (VAC) bottleneck, and Hybrid Quantum Severity Classifier.</text>
+  </g>
+</svg>
